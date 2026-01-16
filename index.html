@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mission Control: Orbital Crisis</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="intro-container">
+    <video id="intro-video" autoplay muted playsinline>
+      <source src="assets/intro.mp4" type="video/mp4" />
+    </video>
+  </div>
+
+  <!-- LANDING PAGE -->
+  <div id="landing-page" class="hidden">
+
+
+    <div class="stars-bg"></div>
+
+    <!-- top bar -->
+    <div class="top-bar">
+      <div class="coins">
+        <i class="fa-solid fa-coins"></i>
+        <span class="coin-count">8,507,400</span>
+      </div>
+
+      <button class="settings-btn"><i class="fa-solid fa-gear"></i></button>
+    </div>
+
+    <!-- main content -->
+    <div class="main-content">
+
+      <div class="title-block">
+        <h1 class="game-title">MISSION CONTROL</h1>
+        <h2 class="game-subtitle">ORBITAL CRISIS</h2>
+      </div>
+
+      <button class="start-btn">
+        START MISSION
+      </button>
+
+    </div>
+
+    <!--bottom bar -->
+    <div class="bottom-bar">
+
+      <div class="info-card">
+        <span class="info-label">Progress</span>
+        <span class="info-value">1/3 Ships</span>
+      </div>
+
+      <div class="info-card">
+        <span class="info-label">Best Run</span>
+        <span class="info-value">12:34</span>
+      </div>
+
+      <div class="info-card">
+        <span class="info-label">Rank</span>
+        <span class="info-value">Captain</span>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
