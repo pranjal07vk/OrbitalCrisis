@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="all.css" />
+</head>
+<body>
+    <div class="dashboard">
+    <div class="stars-bg"></div>
+
+  <!--Top Bar -->
+  <header class="top-bar">
+    <div class="left">
+      <span class="back">←</span>
+      <div>
+        <h1>Aurora Ascendant</h1>
+        <p>Aethelred-Class Elite Stealth Frigate</p>
+      </div>
+    </div>
+    <div class="right">
+      <div>Status: <span class="ok">Operational</span></div>
+      <div>Credits: <span class="credits">8,500,000</span></div>
+    </div>
+  </header>
+
+  <main class="main-layout">
+
+    <!-- Ship + Gauges -->
+    <section class="ship-area">
+      <div class="ship-container">
+        <img src="../assets/Tship2.png" class="ship-rotate" />
+      </div>
+
+      <div class="gauges">
+        <div class="gauge thrust">
+          <span>THRUST FORCE</span>
+          <div class="arrow-bar">
+            <div class="arrow"></div>
+            <div class="bar"><div class="fill" style="width:82%"></div></div>
+          </div>
+        </div>
+
+        <div class="gauge fuel">
+          <span>FUEL</span>
+          <div class="arrow-bar">
+            <div class="arrow"></div>
+            <div class="bar"><div class="fill" style="width:98%"></div></div>
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+
+
+
+    
+    <section class="mid-column">
+        <!--Core Stats -->
+        <section class="core-stats">
+            <div class="stat">
+                <label>SPEED</label>
+                <div class="hud-bar">
+                    <span class="active"></span>
+                    <span class="active"></span>
+                    <span class="active"></span>
+                    <span class="active"></span>
+                    <span></span><span></span><span></span><span></span><span></span><span></span>
+                </div>
+            <small>45 / 100</small>
+            </div>
+
+            <div class="stat">
+                 <label>ENERGY</label>
+                <div class="hud-bar">
+                    <span class="active"></span>
+                    <span class="active"></span>
+                    <span class="active"></span>
+                    <span class="active"></span>
+                    <span></span><span></span><span></span><span></span><span></span><span></span>
+                </div>
+            <small>40%</small>
+            </div>
+
+            <div class="stat boost">⚡ ENERGY BOOST +25%</div>
+        </section>
+
+        <!--Rewards -->
+        <section class="rewards">
+            <h3>Rewards & Unlocks</h3>
+            <p>Coins on Success: <b>50,000 Cr</b></p>
+            <p>XP Gain: <b>1,200</b></p>
+            <p>Next Unlock: <b>Shadow</b></p>
+        </section>
+
+        <!-- start btn -->
+        <button class="start-btn">START MISSION</button>
+    </section>
+    
+
+    <!--Systems -->
+    <section class="systems">
+      <h3>Systems Status</h3>
+
+      <div class="system">
+        <span>Navigation</span>
+        <div class="health"><div style="width:100%"></div></div>
+        <small>Active</small>
+      </div>
+
+      <div class="system">
+        <span>Power</span>
+        <div class="health"><div style="width:95%"></div></div>
+        <small>Stable</small>
+      </div>
+
+      <div class="system warning">
+        <span>Shield</span>
+        <div class="health"><div style="width:100%"></div></div>
+        <small>Multi-Phase Active</small>
+      </div>
+
+      <div class="system">
+        <span>Comms</span>
+        <div class="health"><div style="width:88%"></div></div>
+        <small>Encrypted</small>
+      </div>
+
+      <div class="system">
+        <span>Engine</span>
+        <div class="health"><div style="width:92%"></div></div>
+        <small>Nominal</small>
+      </div>
+    </section>
+
+    
+
+  </main>
+
+  <!-- Bottom Metrics Panel -->
+  <div class="ship-metrics">
+    <h3>Ship Metrics</h3>
+
+  <div class="metric">
+    <span>Core Level</span>
+    <div class="metric-bar">
+      <div class="fill" style="width:80%"></div>
+    </div>
+    <small>Level 8 / 10</small>
+  </div>
+
+  <div class="metric">
+    <span>Ship Rating</span>
+    <div class="metric-bar">
+      <div class="fill" style="width:100%"></div>
+    </div>
+    <small>★★★★★ (5.0)</small>
+  </div>
+</div>
+
+
+</body>
+</html>

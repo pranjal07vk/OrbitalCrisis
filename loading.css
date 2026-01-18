@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: radial-gradient(circle at center, #0b1d33 0%, #000 70%);
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+
+
+.stars-bg {
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(1px 1px at 10% 20%, #fff, transparent),
+    radial-gradient(1px 1px at 30% 80%, #fff, transparent),
+    radial-gradient(1px 1px at 70% 40%, #fff, transparent),
+    radial-gradient(2px 2px at 90% 10%, #fff, transparent),
+    radial-gradient(1px 1px at 50% 60%, #fff, transparent);
+  background-size: 200px 200px;
+  animation: moveStars 60s linear infinite;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+@keyframes moveStars {
+  from { transform: translateY(0); }
+  to   { transform: translateY(1000px); }
+}
+
+/* Loader Layout */
+.loader-container {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  transition: opacity 0.8s ease;
+  z-index: 2;
+  text-align: center;
+}
+
+
+.rocket {
+  width: 280px;
+  filter: drop-shadow(0 0 20px #3fd0ff);
+  transition: transform 1s ease, opacity 1s ease;
+}
+
+
+.loading-text {
+  font-size: 22px;
+}
+
+.progress-bar {
+  width: 260px;
+  height: 6px;
+  background: rgba(255,255,255,0.15);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress-bar span {
+  display: block;
+  height: 100%;
+  width: 0%;
+  background: #4fc3ff;
+  transition: width 0.1s linear;
+}
+
+.sub-text {
+  font-size: 12px;
+  letter-spacing: 3px;
+  opacity: 0.7;
+}
+
+/* Exit Animations */
+.fade-out {
+  opacity: 0;
+}
+
+.rocket-fly {
+  transform: translateY(-200px);
+  opacity: 0;
+}
+
+.space-bg {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, #0b2a4d 0%, #000 75%);
+  z-index: 0;
+}
+
+.loading-text,
+.sub-text {
+  color: #7ddcff;
+}
+
+
